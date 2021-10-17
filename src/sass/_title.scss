@@ -68,6 +68,15 @@ color: var(--color3);
 }
 
 @media(max-width: 1000px){
+    .nav-text{
+        font-family: "Roboto", sans-serif;
+        font-size: 1.8em;
+        color: white;
+        font-weight: bolder;
+            &:hover{
+                border-bottom: 1px solid rgb(0, 255, 0);
+            }
+    }
     .text {
         font-size: 1em;
     }

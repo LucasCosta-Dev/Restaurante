@@ -7,7 +7,7 @@
     border-radius: 100%;
     margin: 0px 10px ;
 }
-i{
+.up-arrow{
     cursor: pointer;
     color:var(--color3);
     font-size: 5em;
@@ -15,5 +15,15 @@ i{
     
         &:hover{
     color: white;
+    }
+}
+.button-menu{
+    cursor: pointer;
+    color:var(--color1);
+    font-size: 3em;
+    margin-bottom: 5px;
+    
+        &:hover{
+    color: rgb(0, 255, 0);
     }
 }

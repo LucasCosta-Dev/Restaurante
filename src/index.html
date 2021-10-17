@@ -19,14 +19,13 @@
 <body>
     <header id="bemvindo">
         <div class="container-nav">
-            <div class="row-nav pt">
+            <div class="row-nav pt pr">
                 <div class="row-logo">
-                <img class="img-logo"  src="imagens/logo-restaurante.png" alt="logo-restaurante">
-                <abbr class="nav-text">Restaurante</abbr>
-                <nav id="nav"> 
+                    <img class="img-logo" src="imagens/logo-restaurante.png" alt="logo-restaurante">
+                    <abbr class="nav-text">Restaurante</abbr>
                 </div>
-                    <button id="btn-mobile">menu</button>
-                    <ul class="row-menu">
+                <div class="desktop-menu">
+                    <ul class="row-nav">
                         <li><a class="nav-text m-nav" href="#bemvindo">Bem Vindo</a></li>
                         <li><a class="nav-text m-nav" href="#precos">Preços</a>
                         <li><a class="nav-text m-nav" href="#sobre">Sobre</a></li>
@@ -36,9 +35,21 @@
                         <li><a class="nav-text m-nav" href="#reserva">Reserva</a></li>
                         <li><a class="nav-text m-nav" href="#contato">Contatos</a></li>
                     </ul>
-                </nav>
+                </div>
+                <div class="mobile-menu">
+                    <a class="icon-menu"><i class="button-menu fas fa-bars"></i></a>
+                    <ul>
+                        <li class="pd-li"><a class="nav-text m-nav" href="#bemvindo">Bem Vindo</a></li>
+                        <li class="pd-li"><a class="nav-text m-nav" href="#precos">Preços</a>
+                        <li class="pd-li"><a class="nav-text m-nav" href="#sobre">Sobre</a></li>
+                        <li class="pd-li"><a class="nav-text m-nav" href="#cerveja">Cervejas</a></li>
+                        <li class="pd-li"><a class="nav-text m-nav" href="#paes">Pães</a></li>
+                        <li class="pd-li"><a class="nav-text m-nav" href="#destaques">Destaques</a></li>
+                        <li class="pd-li"><a class="nav-text m-nav" href="#reserva">Reserva</a></li>
+                        <li class="pd-li"><a class="nav-text m-nav" href="#contato">Contatos</a></li>
+                    </ul>
+                </div>
             </div>
-
         </div>
     </header>
     <!-- banner home -->
@@ -381,7 +392,7 @@
                 </div>
                 <div class="coll-400">
                     <div class="row-footer">
-                        <i class="fas fa-arrow-circle-up"></i>
+                        <i class="up-arrow fas fa-arrow-circle-up"></i>
                         <span class="back-top">Voltar ao topo</span>
                     </div>
                 </div>
@@ -398,12 +409,5 @@
         </div>
     </footer>
 </body>
-<script>
-    const btnmobile = document.getElementById('btn-mobile');
-    function toogleMenu();
-    const nav = document.getElementById('nav');
-    nav.classlist.toogl('active');
-    btnmobile.addEventListener('click', toogleMenu);
-</script>
-
+<script src="../JavaScript/buttom-menu.js"></script>
 </html>

@@ -1,21 +1,33 @@
-.py{
+.py {
     padding: 25px 0px;
 }
-.mb-title-section{
+.mb-title-section {
     margin-bottom: 20px;
 }
-.mb-paragraph{
+.mb-paragraph {
     margin-bottom: 20px;
 }
-.mb-footer{
+.mb-footer {
     margin-bottom: 20px;
 }
-.pt{
+.pt {
     padding-top: 10px;
 }
-.m-nav{
-    margin: 0px 40px;
+.pr {
+    padding-right: 20px;
 }
-.m10{
+.m-nav {
+    margin: 0px 30px;
+}
+.m10 {
     margin: 0px 10px;
+}
+
+@media (max-width: 1000px) {
+    .m-nav {
+        margin: 0px 0px;
+    }
+    .pd-li {
+        padding: 5px 30px;
+    }
 }

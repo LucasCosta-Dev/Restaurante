@@ -77,6 +77,14 @@ html {
   color: var(--color3); }
 
 @media (max-width: 1000px) {
+  .nav-text {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.8em;
+    color: white;
+    font-weight: bolder; }
+    .nav-text:hover {
+      border-bottom: 1px solid lime; }
+
   .text {
     font-size: 1em; }
 
@@ -186,12 +194,21 @@ html {
 .pt {
   padding-top: 10px; }
 
+.pr {
+  padding-right: 20px; }
+
 .m-nav {
-  margin: 0px 40px; }
+  margin: 0px 30px; }
 
 .m10 {
   margin: 0px 10px; }
 
+@media (max-width: 1000px) {
+  .m-nav {
+    margin: 0px 0px; }
+
+  .pd-li {
+    padding: 5px 30px; } }
 .container {
   min-height: 500px;
   max-width: 1280px;
@@ -251,14 +268,19 @@ html {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  justify-content: space-around; }
 
-.row-menu {
+.desktop-menu {
   display: flex;
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap; }
+
+.mobile-menu {
+  display: none;
+  text-align: right;
+  width: 70%; }
 
 .row-hour {
   display: flex;
@@ -294,8 +316,22 @@ html {
   align-items: center; }
 
 @media (max-width: 1000px) {
-  .row-menu {
+  .desktop-menu {
     display: none; }
+
+  .mobile-menu {
+    display: block; }
+    .mobile-menu ul {
+      opacity: 0;
+      transition: 1s;
+      background-color: black;
+      width: 100%;
+      position: absolute;
+      left: 0px;
+      top: 70px;
+      text-align: center; }
+    .mobile-menu .show-menu {
+      opacity: 1 !important; }
 
   .row-footer {
     display: flex;
@@ -398,12 +434,6 @@ html {
   border-radius: 6px;
   margin-left: 15px; }
 
-.btn-mobile {
-  display: none; }
-
-@media (max-width: 700px) {
-  .btn-mobile {
-    display: block; } }
 .icon-social {
   cursor: pointer;
   list-style-type: none;
@@ -413,12 +443,20 @@ html {
   border-radius: 100%;
   margin: 0px 10px; }
 
-i {
+.up-arrow {
   cursor: pointer;
   color: var(--color3);
   font-size: 5em;
   margin-bottom: 15px; }
-  i:hover {
+  .up-arrow:hover {
     color: white; }
+
+.button-menu {
+  cursor: pointer;
+  color: var(--color1);
+  font-size: 3em;
+  margin-bottom: 5px; }
+  .button-menu:hover {
+    color: lime; }
 
 /*# sourceMappingURL=global.css.map */
