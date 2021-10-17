@@ -10,7 +10,8 @@
   --color3: #282a2c; }
 
 html {
-  min-height: 100vh; }
+  min-height: 100vh;
+  scroll-behavior: smooth; }
 
 .nav-text {
   font-family: "Roboto", sans-serif;
@@ -322,7 +323,7 @@ html {
   .mobile-menu {
     display: block; }
     .mobile-menu ul {
-      opacity: 0;
+      opacity: 0%;
       transition: 1s;
       background-color: black;
       width: 100%;
@@ -331,7 +332,7 @@ html {
       top: 70px;
       text-align: center; }
     .mobile-menu .show-menu {
-      opacity: 1 !important; }
+      opacity: 90% !important; }
 
   .row-footer {
     display: flex;
