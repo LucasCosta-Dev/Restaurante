@@ -1,0 +1,30 @@
+.container{
+    min-height: 500px;
+    max-width: 1280px;
+    margin: 0px auto;
+}
+.container-nav{
+    min-height: 70px;
+    background-color: black;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    z-index: 1030;
+}
+.container-hour{
+    min-height: 300px;
+    max-width: 1280px;
+    margin: 0px auto;
+}
+.container-footer{
+    min-height: 200px;
+    background-color: #343A40;
+}
+
+@media(max-width: 1000px){
+    .container{
+        min-height: auto;
+        margin: 0px 10px;
+    }
+}

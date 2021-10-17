@@ -1,0 +1,29 @@
+.input-hour{
+    
+    height: 50px;
+    margin: 15px;
+    text-indent: 10px;
+    border: 1px solid #e0dfdf;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2em;
+}
+.input-msg{
+    height: 50px;
+    text-indent: 10px;
+    border: 1px solid #e0dfdf;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2em;
+    margin: 10px 0px;
+}
+.input-msg-text{
+    height: 250px;
+}
+
+
+@media(max-width: 500px){
+    .input-hour {
+        width: 95%;
+    }
+}

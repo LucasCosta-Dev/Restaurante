@@ -1,0 +1,25 @@
+.reserve-button{
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    color: white;
+    border: 1px solid  var(--color1);
+    background-color: #0069D9;
+    text-indent: 0px;
+    border-radius: 6px;
+    margin-left: 15px;
+}
+.btn-mobile{
+    display: none;
+}
+
+
+@media(max-width: 700px){
+    .btn-mobile{
+        display: block;
+    }
+
+
+
+}

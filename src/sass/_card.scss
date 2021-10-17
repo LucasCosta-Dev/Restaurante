@@ -1,0 +1,28 @@
+.card{
+    max-width: 600px;
+    max-height: 600px;
+    width: 100%;
+    margin: 5px 5px;
+    border-radius: 5px;
+}
+.min-card{
+    width: 98%;
+    height: auto;   
+}
+.card-logo{
+    width: 10px;
+    height: auto;   
+}
+@media(max-width: 1000px){
+    .card{
+        width: 95%;
+    }
+
+
+}
+
+@media(max-width: 500px){
+    .card{
+        margin: 15px 0px;
+    }
+}
